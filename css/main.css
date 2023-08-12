@@ -2770,7 +2770,9 @@ body {
     text-shadow: none;
     line-height: 0;
     outline: 0; }
-
+.steam{
+  height:110px;
+}
 img {
   max-width: 100%;
   border-radius: 1px; }
@@ -4596,7 +4598,23 @@ Created using IcoMoon - icomoon.io
       right: 5%;
       max-width: 135px;
       top: 93%; } }
+#logoContainer {
+    /* max-width: 800px; /* Adjust the maximum width as needed */ */
+    margin: 0 auto; /* Center align the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allows images to wrap to the next line if needed */
+    position: relative; /* Position the container for absolute positioning */
+  }
 
+#steamLogoContainer {
+    position: absolute;
+    top: 90%; /* Vertically center the Steam logo container */
+    left: 10%; /* Horizontally center the Steam logo container */
+    transform: translate(-50%, -50%); /* Center the container precisely */
+    z-index: -1; /* Position behind the game logos */
+  }
 @media screen and (min-width: 992px) {
   .burger-menu .navbar-collapse {
     position: fixed;
